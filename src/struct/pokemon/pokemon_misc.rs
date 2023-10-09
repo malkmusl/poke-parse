@@ -1,5 +1,4 @@
 #![allow(dead_code)]
-use serde::Deserialize;
 
 #[derive(Clone, Debug)]
 pub struct EggGroups {

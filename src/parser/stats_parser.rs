@@ -1,6 +1,5 @@
 use select::document::Document;
 use select::predicate::Name;
-use select::predicate::Attr;
 use select::predicate::Predicate;
 
 use std::sync::Mutex;
@@ -43,7 +42,7 @@ pub async fn parse_stats() {
 
                                     let mut name = "?";
                                     let mut id = 0;
-                                    let mut total = 0;
+                                    let mut _total = 0;
                                     let mut hp = 0;
                                     let mut attack = 0;
                                     let mut defense = 0;
@@ -76,7 +75,7 @@ pub async fn parse_stats() {
                                             id = result_u32;
                                         }
                                         if cell_number == 1 {
-                                            total = result_u32;
+                                            _total = result_u32;
                                         }
                                         if cell_number == 2 {
                                             hp = result_u32;

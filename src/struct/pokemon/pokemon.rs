@@ -1,5 +1,4 @@
 #![allow(dead_code)]
-use serde::Deserialize;
 
 use super::{pokemon_lang::Lang, pokemon_stats::Stats, pokemon_attacks::{Attacks, LevelUpAttack, HMTMAttack, EggAttack, TutorAttack}, pokemon_sprites::Sprites, pokemon_data::Ident};
 
@@ -18,10 +17,10 @@ impl Pokemon {
         national_dex: u32, 
         main_type: &str, 
         secondary_type: &str,
-        main_ability: &str,
-        hidde_ability: &str,
-        height: &str,
-        weight: &str, 
+        _main_ability: &str,
+        _hidde_ability: &str,
+        _height: &str,
+        _weight: &str, 
         method: &str, 
         evolution: &str, 
         condition: &str,
@@ -66,7 +65,7 @@ impl Pokemon {
         ev_speed: u32,
         egg_group_1: &str, 
         egg_group_2: &str,
-        egg_cycle: u32,
+        _egg_cycle: u32,
         male: f32, 
         female: f32, 
         no_gender: f32,
@@ -77,7 +76,7 @@ impl Pokemon {
         level_up_attacks: Vec<LevelUpAttack>, 
         hm_tm_attacks: Vec<HMTMAttack>,
         egg_attacks: Vec<EggAttack>,
-        evolution_attacks: Vec<TutorAttack>,
+        _evolution_attacks: Vec<TutorAttack>,
         tutor_attacks: Vec<TutorAttack>,
         front_sprite: &str,
         back_sprite: &str,

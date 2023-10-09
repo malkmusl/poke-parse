@@ -1,5 +1,4 @@
 #![allow(dead_code)]
-use serde::Deserialize;
 
 use super::pokemon_misc::{EggGroups, Gender};
 
